@@ -1,0 +1,124 @@
+/* Mobile */
+@media (max-width: 576px) { 
+    .navBar .navs{
+        display: none;
+    }
+    .header{
+        height: 550px;
+    }
+    .header .coverContent{
+        padding-top: 100px;
+    }
+    .header .coverContent .heroCont{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-condtent: center;
+    }
+    
+    .sectionHd{
+        font-size: 20px;
+    }
+    .about .section{
+        display: block;
+    }
+    .line{
+        width: 50%;
+    }
+    .lineCol{
+        width: 100%;
+    }
+    .about .section .ab{
+        margin-top: 70px;
+    }
+    .about .section .ab .hd{
+        font-size: 20px;
+    }
+    .about .section .ab .desc{
+        text-align: initial;
+        font-size: 14px;
+    }
+    
+    .whatIdo .services{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .whatIdo .hd{
+        font-size: 20px;
+    }
+    .whatIdo .hdDesc{
+        font-size: 12px;
+    }
+    .whatIdo .services .service .cont .ditts{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .cta{
+        display: block;
+        margin: 20px 0%;
+        font-size: 13px;
+        text-align: center;
+    }
+    .cta button{
+        padding: 15px 20px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .skill{
+        padding: 20px 5%;
+    }
+    .skill .skil{
+        grid-template-columns: 1fr;
+    }
+    .progress-container {
+    }
+    .circle-wrapper{
+        gap: 5%;
+        backhground: red;
+        justify-content: space-between;
+        grid-temjplate-columns: 100px 100px;
+    }
+    .line-bar-container{
+        padding: 10px 8%;
+    }
+    .skill .skil .line_prog .profHd{
+        margin-top: 70px;
+    }
+    
+    
+    
+    .project .projects{
+        grid-template-columns: 1fr 1fr;
+    }
+    .project .projectNav{
+        overflow: scroll;
+        gap: 10px;
+        margin: 0px;
+        justify-content: initial;
+        
+    }
+    .project .projectNav .nav{
+        flex: 1;
+        font-size: 12px;
+    }
+}
+
+
+/* Mobile (larger) */
+@media (min-width: 576px) { 
+    
+}
+    
+    
+    
+/* Tablet (≥768px) */
+@media (min-width: 768px) {
+    
+}
+
+/* Desktop (≥992px) */
+@media (min-width: 992px) {
+    
+}
+
