@@ -71,7 +71,7 @@ document.addEventListener('scroll', ()=>{
                         animateCircle(entry.target);
                     } else if (entry.target.classList.contains('line-bar-container')) {
                         animateLine(entry.target);
-                    }
+                    } 
                     observer.unobserve(entry.target);
                 }
             });
