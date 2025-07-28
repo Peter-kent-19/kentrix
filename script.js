@@ -79,3 +79,17 @@ document.addEventListener('scroll', ()=>{
         
         circleContainers.forEach(container => observer.observe(container));
         lineContainers.forEach(container => observer.observe(container));
+
+
+
+
+
+
+/// Handle clickabls
+let clickabel = document.querySelectorAll('.clickable');
+
+clickabel.forEach((cbl) =>{
+    cbl.addEventListener('click', () =>{
+        alert('This Feature is Currently not available at this moment. Please Try again Later');
+    })
+}) 

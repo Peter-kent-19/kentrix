@@ -17,7 +17,7 @@
     }
     
     .sectionHd{
-        font-size: 20px;
+        font-size: 35px;
     }
     .about .section{
         display: block;
@@ -61,7 +61,7 @@
         text-align: center;
     }
     .cta button{
-        padding: 15px 20px;
+        paddging: 15px 20px;
         font-size: 14px;
         margin-top: 20px;
     }
