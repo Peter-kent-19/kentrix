@@ -38,7 +38,7 @@ img{
 
 body{
     background: #000000;
-    background: url('/images/images (80).jpeg');
+    background: url('./images/images (80).jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
