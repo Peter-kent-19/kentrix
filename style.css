@@ -1,10 +1,26 @@
+@font-face {
+   font-family: "signika";
+   font-style: normal;
+   font-weight: 100;
+   font-display: swap;
+   src: url(./icons/Share_Tech/ShareTech-Regular.ttf);
+}
+
+/*
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-radius;
     transition: .5s;
     color: #FFFFFF;
-    font-family: sans-serif;
+    font-family: 'signika';
 }
 
 :root{
@@ -43,6 +59,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+.col{
+    color: var(--color);
 }
 .header{
     height: 500px;
