@@ -102,6 +102,11 @@
         flex: 1;
         font-size: 12px;
     }
+    
+    
+    .contact .contactBox{
+        flex-direction: column;
+    }
 }
 
 

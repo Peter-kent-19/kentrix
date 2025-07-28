@@ -4,6 +4,7 @@
     box-sizing: border-radius;
     transition: .5s;
     color: #FFFFFF;
+    font-family: sans-serif;
 }
 
 :root{
@@ -667,7 +668,7 @@ body{
     text-decoration: none;
     align-items: center;
     padding: 0px 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 .contact .contactBox .contB1 .links .link a .ic{
     height: 40px;
