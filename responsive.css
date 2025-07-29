@@ -3,6 +3,12 @@
     .navBar .navs{
         display: none;
     }
+    .navBar .navBtn{
+        display: flex;
+    }
+    .navBar .logo{
+        padding-left: 20px;
+    }
     .header{
         height: 550px;
     }

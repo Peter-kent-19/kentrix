@@ -93,3 +93,15 @@ clickabel.forEach((cbl) =>{
         alert('This Feature is Currently not available at this moment. Please Try again Later');
     })
 }) 
+
+
+
+
+
+///// Open and Close of mobile nav
+let navbtn = document.querySelector('.navBtn');
+let navbox = document.querySelector('.mobileNavBar');
+navbtn.addEventListener('click', ()=>{
+    navbox.classList.toggle('openNav')
+})
+

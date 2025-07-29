@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="icons.css" type="text/css" media="all" />
     <link rel="stylesheet" href="responsive.css" type="text/css" media="all" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("QojkbHQ5mr6uJKq0s"); // Get from emailjs.com
+        })();
+    </script>
 </head>
 <body>
     
@@ -18,6 +25,27 @@
             <div class="nav"><a href="#projects">Projects</a></div>
             <div class="nav"><a href="#testimonial">Testimonials</a></div>
             <div class="nav"><a href="#contact">Contact</a></div>
+        </div>
+        <div class="navBtn">☰</div>
+    </div>
+    
+    <div class="mobileNavBar">
+        <div class="navs">
+            <div class="navv">
+                <a href="#about">About</a>
+            </div>
+            <div class="navv">
+                <a href="#skills">Skills</a>
+            </div>
+            <div class="navv">
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="navv">
+                <a href="#testimonial">Testimonial</a>
+            </div>
+            <div class="navv">
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </div>
     
@@ -442,15 +470,17 @@
             </div>
             <div class="contB2">
                 <div class="hd">Send Direct Message:</div>
-                <div class="messagingBox">
-                    <input type="text" placeholder="Enter Your Fullname...">
-                    <input type="text" placeholder="Enter Your Email Address...">
-                    <textarea placeholder="Enter Your Message..."></textarea>
-                    <div>
-                        <span>All Fields are required!</span>
-                        <button class="clickable">Send</button>
+                <form id="contact-form">
+                    <div class="messagingBox">
+                        <input type="text" name="from_name" placeholder="Enter Your Fullname...">
+                        <input type="email" name="reply_to" placeholder="Enter Your Email Address...">
+                        <textarea name="message" placeholder="Enter Your Message..."></textarea>
+                        <div>
+                            <span class="statue">All Fields are required!</span>
+                            <button type="submit">Send</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         
@@ -458,6 +488,53 @@
     </div>
 
 
+
+
+
+
+
+
+
+
+
+
 <script src="script.js"></script>
+
+<!--form id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required />
+    <input type="email" name="reply_to" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+</form-->
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        let statue = document.querySelector('.statue');
+        
+        ///// Update the statue box
+        this.from_name.value !== '' &&
+        this.reply_to.value !== '' &&
+        this.message.value !== '' ?
+        statue.innerHTML = "Sending..."
+        : statue.innerHTML = "All fields are Required!";
+
+        ////// Check filled inputs and send
+        this.from_name.value !== '' && 
+        this.reply_to.value !== '' && 
+        this.message.value !== '' ?
+        emailjs.sendForm("service_j5400ci", "template_zrv3thk", this)
+            .then(() => {
+                statue.innerHTML = "Email sent successfully!";
+                this.from_name.value = '';
+                this.reply_to.value = '';
+                this.message.value = '';
+            }, (error) => {
+                statue.innerHTML = "Failed, something went wrong!";
+            })
+        : statue.innerHTML = "All fields are Required!";
+    });
+</script>
+
 </body>
 </html>
